@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProjectCard from '../components/reusables/ProjectCard.astro';
+
+import github from '../../public/github.svg';
+import discord from '../../public/discord.svg';
+---
+
+<Layout title="projects | amxterasus">
+  <main class="flex flex-col pb-6">
+    <h1 class="mb-4 text-2xl font-semibold text-ctp-pink">Projects!</h1>
+    <ul class="flex flex-col gap-4">
+      <ProjectCard
+        title="Amxterasus Website"
+        name="Source"
+        icon={github}
+        url="https://github.com/amxterasus/amxterasus-website"
+        description="My website."
+        technologies="Astro, Tailwind CSS"
+      />
+      <ProjectCard
+        title="Random Anime Quote"
+        name="Source"
+        icon={github}
+        url="https://github.com/amxterasus/Random-Quote-Generator-Anime"
+        description="A random anime quotes generator website."
+        technologies="Astro, Javascript, CSS"
+      />
+      <ProjectCard
+        title="NekoFem"
+        name="WIP"
+        icon={discord}
+        url=""
+        description="A Discord bot with fun interaction commands like kiss, hug, pat, and more."
+        technologies="Javascript, Discord.js"
+      />
+    </ul>
+  </main>
+</Layout>

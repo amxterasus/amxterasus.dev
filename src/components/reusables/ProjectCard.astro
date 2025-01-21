@@ -1,0 +1,15 @@
+---
+import LinkAnchor from './LinkAnchor.astro';
+
+const { title, icon, name, url, description, technologies } = Astro.props;
+---
+
+<li class="flex flex-col">
+  <div class="inline-flex">
+    <img src={icon.src} alt={title} class="mr-2" />
+    <h1 class="mr-2 font-semibold text-ctp-mauve">{title}</h1>
+    <LinkAnchor name={name} url={url} />
+  </div>
+  <p>{description}</p>
+  <p class="text-ctp-overlay1">{technologies}</p>
+</li>

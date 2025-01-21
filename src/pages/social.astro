@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SocialCard from '../components/reusables/SocialCard.astro';
+
+import github from '../../public/github.svg';
+import youtube from '../../public/youtube.svg';
+import discord from '../../public/discord.svg';
+---
+
+<Layout title="social | amxterasus">
+  <main class="flex flex-col pb-6">
+    <h1 class="mb-4 text-2xl font-semibold text-ctp-pink">Socials!</h1>
+    <ul class="flex flex-col gap-2">
+      <SocialCard
+        title="Github"
+        name="Amxterasus"
+        svg={github}
+        url="https://github.com/amxterasus"
+      />
+      <SocialCard
+        title="YouTube"
+        name="Amxterasus"
+        svg={youtube}
+        url="https://www.youtube.com/channel/UClJG2Q_x6XIXtnNnKambUzA"
+      />
+      <SocialCard
+        title="Discord"
+        name="Amxterasus"
+        svg={discord}
+        url="https://discord.com/users/776176694209413170"
+      />
+    </ul>
+  </main>
+</Layout>
