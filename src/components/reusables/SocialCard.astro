@@ -5,7 +5,7 @@ const { title, name, svg, url } = Astro.props;
 ---
 
 <li class="inline-flex">
-  <img src={svg.src} alt={title} class="mr-2" />
+  <img title={title} src={svg.src} alt={title} class="mr-2" />
   <h1 class="mr-2 font-semibold text-ctp-mauve">{title}</h1>
   <LinkAnchor name={name} url={url} />
 </li>
